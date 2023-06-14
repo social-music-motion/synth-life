@@ -48,13 +48,12 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
 
-import React from 'react';
-import { render } from 'react-dom';
-import { ReactDOM } from 'react';
-import App from './App.jsx';
+// import './index.js';
+// import * as React from 'react';
+// import * as ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// function render() {
+//   ReactDOM.render(<h2>Hello from React!</h2>, document.body);
+// }
 
-root.render(
-  <App />
-);
+// render();
