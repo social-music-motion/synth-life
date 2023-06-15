@@ -5,7 +5,7 @@ import Playbar from './containers/Playbar.jsx';
 function App() {
   return (
     <div className="App">
-      <Pad />
+      
       <Playbar />
       <PadSequence />
     </div>
