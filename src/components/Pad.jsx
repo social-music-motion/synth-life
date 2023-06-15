@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import kick from '../assets/soundLibrary/kick.wav'
 
-const Pad = ({ isActive, id }) => {
+const Pad = ({ setActive, id }) => {
   const [playingColor, setPlayingColor] = useState('red')
   const handleClick = () => {
-    isActive(id)
+    setActive(id)
     // if green play the sound one time
     if (playingColor === 'red'){
       const audio = new Audio(kick);

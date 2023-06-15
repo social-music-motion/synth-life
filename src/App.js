@@ -1,13 +1,9 @@
-import Pad from './components/Pad.jsx'
-import PadSequence from './containers/PadSequence.jsx';
-import Playbar from './containers/Playbar.jsx';
+import Sequencer from './containers/Sequencer.jsx';
 
-function App() {
+const App = () =>  {
   return (
     <div className="App">
-      
-      <Playbar />
-      <PadSequence />
+      <Sequencer />
     </div>
   );
 }

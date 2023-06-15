@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import Pad from '../components/Pad';
 
-const PadSequence = () => {
-  const [ sequenceOnOff, setSequenceOnOff ] = useState([false, false, false, false, false, false, false, false, false, false, false, false])
+const PadSequence = ({ setActive }) => {
+  // const [ sequence, setSequence ] = useState([false, false, false, false, false, false, false, false, false, false, false, false])
  
-  const isActive = (id) => {
-    const newSequence = sequenceOnOff.slice()
-    newSequence[id] = !newSequence[id];
-    setSequenceOnOff(newSequence)
-  }
+  // const isActive = (id) => {
+  //   const newSequence = sequence.slice();
+  //   newSequence[id] = !newSequence[id];
+  //   setSequence(newSequence);
+  // }
   
   const pads = [];
   for (let i = 0; i < 16; i++) {
-    pads.push(<Pad id={i} isActive={isActive} />);
+    pads.push(<Pad id={i} setActive={setActive} />);
   }
   
   return (
